@@ -23,5 +23,5 @@ randomFood$.subscribe((ajaxResponse) =>
   console.log(ajaxResponse.response.dish)
 );
 
-//forkJoin waits for all the subscriptions to complete and then emit the values providing by each of the input observables
+//forkJoin waits for all the subscriptions to complete and then emit the values provided by each of the input observables
 forkJoin(randomName$, randomNation$, randomFood$).subscribe();

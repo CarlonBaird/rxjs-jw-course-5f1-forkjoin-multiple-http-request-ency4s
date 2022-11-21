@@ -11,3 +11,7 @@ let URL3: string = 'https://random-data-api.com/api/food/random_food';
 const randomName$ = ajax(URL1);
 const randomNation$ = ajax(URL2);
 const randomFood$ = ajax(URL3);
+
+randomName$.subscribe((ajaxResponse) => console.log(ajaxResponse));
+randomNation$.subscribe((ajaxResponse) => console.log(ajaxResponse));
+randomFood$.subscribe((ajaxResponse) => console.log(ajaxResponse));
